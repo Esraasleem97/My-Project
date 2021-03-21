@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#menu-toggle:checked + #menu {
+    display: block;
+}
+.hero-section ,.contact-section {
+    /*height: 880px;*/
+    @apply relative w-screen h-screen overflow-hidden
+}
+.img-hero {
+    filter: brightness(.3);
+    @apply w-full object-cover transition-all duration-500 transform h-screen
+}
+.hero-section:hover .img-hero,.contact-section:hover .img-hero {
+    filter: brightness(.2);
+    @apply scale-105
+}
+.tracking-space {
+   letter-spacing: .5em;
+}
+
+.btn {
+    @apply py-2 px-4 border mx-2  transition-all duration-150
+}
+.btn:focus {
+    @apply outline-none
+}
+.btn-primary {
+    @apply bg-blue-600 border-blue-600 text-white
+}
+.btn-primary:hover {
+    @apply bg-transparent text-blue-600
+}
+html,
+body {
+    scroll-padding-top: 65px; /* set to the height of your header */
+}
+
+.headroom--pinned {
+    display: none;
+}
+
+.headroom--unpinned {
+    @apply flex fixed top-0 z-50 w-full shadow-2xl transition-all duration-500
+}
+
+.headroom--top {
+    display: flex;
+}
+.h-104 {
+    height: 30rem;
+}
+.img-Depart {
+    @apply overflow-hidden
+}
+.img-Depart img {
+    @apply duration-500 transform z-20 object-cover
+}
+.img-Depart:hover img {
+    @apply scale-105
+}
+
+.img-Depart::after {
+    content: '';
+    @apply absolute inset-0 flex w-full h-full bg-black opacity-60 z-10 transform duration-500
+}
+.img-Depart:hover::after {
+    @apply opacity-80
+}
+
+.a-section::after {
+    content: '';
+    @apply absolute inset-x-0 -bottom-4 z-20 w-20 h-px bg-white mx-auto
+}
+.about {
+    @apply flex justify-center relative text-blue-600 text-7xl mb-16 font-semibold uppercase tracking-widest w-full
+}
+.about::after {
+    content: '';
+    @apply absolute -bottom-8 mx-auto w-10 h-2 text-center bg-blue-600
+}
+.form::after {
+    content: '';
+    z-index: -1;
+    @apply absolute inset-0 bg-black opacity-50 h-full
+}
+.input-group {
+    @apply  grid grid-cols-1 gap-4
+}
+@screen md {
+    .input-group {
+        @apply grid-cols-2
+    }
+}
+.input-label {
+    text-align: start;
+    @apply font-semibold
+}
+.input:focus{
+    @apply outline-none border border-blue-600 shadow-2xl
+}
+.input {
+    @apply border border-gray-400 py-2 px-4 w-full rounded-sm my-4 text-gray-800
+}
