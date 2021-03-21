@@ -10,7 +10,7 @@
                         <img src="img/lap.svg" alt="">
                         <p class="">2021</p>
                     </div>
-                    <h1 class="text-8xl font-bold">It's time to Change</h1>
+                    <h1 class="text-5xl sm:text-8xl font-bold">It's time to Change</h1>
                     <p class="uppercase tracking-space text-center my-12">Front End Development</p>
                     <button class="btn btn-primary">Browse Now</button>
                 </div>
@@ -56,9 +56,9 @@
     </section>
 
     {{--About us--}}
-    <section class="w-full flex justify-between mb-12 items-center bg-gray-50">
+    <section class="w-full flex flex-wrap lg:flex-nowrap justify-between mb-12 items-center bg-gray-50">
 
-        <div class="w-1/2 px-16 text-center">
+        <div class="w-full lg:w-1/2 my-12 px-10 md:px-16 text-center">
             <h1 class="about">About Me</h1>
             <p class="text-justify leading-loose tracking-widest text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -81,27 +81,20 @@
     <section class="overflow-hidden">
         <div class="contact-section">
             <div class="absolute h-full flex justify-center items-center w-screen z-10 text-white">
-                <div class="text-center w-1/2">
+                <div class="text-center w-full sm:w-4/5 lg:w-1/2">
                     <div class="flex uppercase justify-center items-center tracking-space relative">
                         <p class="">programming</p>
                         <img src="img/lap.svg" alt="">
                         <p class="">2021</p>
                     </div>
                     <form action="" class="relative form px-12 py-8">
-                        <h1 class="text-7xl mb-12 text-left font-body">Contact Us</h1>
+                        <h1 class="text-4xl md:text-7xl mb-12 text-left font-body">Contact Us</h1>
                         <div class="input-group">
                             <div class="input-label">
-                                <label for="first_name">First Name <span class="text-red-600">*</span></label>
+                                <label for="first_name">Full Name <span class="text-red-600">*</span></label>
                                 <input type="text" id="first_name" class="input">
                             </div>
-                            <div class="input-label">
-                                <label for="Last_name">Last Name <span class="text-red-600">*</span></label>
-                                <input type="text" id="Last_name" class="input">
-                            </div>
-                            <div class="input-label">
-                                <label for="email">E-mail Address <span class="text-red-600">*</span></label>
-                                <input type="email" id="email" class="input">
-                            </div>
+
                             <div class="input-label">
                                 <label for="phone">Phone Number <span class="text-red-600">*</span></label>
                                 <input type="text" id="phone" class="input">
@@ -109,8 +102,12 @@
 
                         </div>
                         <div class="input-label">
+                            <label for="email">E-mail Address <span class="text-red-600">*</span></label>
+                            <input type="email" id="email" class="input">
+                        </div>
+                        <div class="input-label">
                             <label for="phone">Message <span class="text-red-600">*</span></label>
-                            <textarea name="" id="" rows="6" class="input"></textarea>
+                            <textarea name="" id="" rows="4" class="input"></textarea>
                         </div>
                         <button class="btn btn-primary">Send</button>
 

@@ -1,6 +1,6 @@
 <header class="lg:px-16 px-8 bg-white flex flex-wrap justify-between items-center py-2 font-hero shadow-md headroom headroom--unpinned">
-   <div class="flex flex-1 w-11/12">
-    <div class="flex-1 md:flex-grow-0 md:flex-shrink-0 flex justify-between items-center text-black font-bold">
+   <div class="flex w-full md:w-11/12 flex-wrap justify-between items-center">
+    <div class="flex-1 md:flex-grow-0 md:flex-shrink-0 flex justify-between text-black font-bold">
         <a href="#" class="text-xl">YourLogo</a>
     </div>
 
