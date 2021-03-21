@@ -108,3 +108,9 @@ body {
 .input {
     @apply border border-gray-400 py-2 px-4 w-full rounded-sm my-4 text-gray-800
 }
+.a-social {
+    @apply text-xl duration-500 transform
+}
+.a-social:hover {
+    @apply text-blue-500 rotate-45
+}
