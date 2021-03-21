@@ -7,7 +7,7 @@ var headroom  = new Headroom(myElement);
 // initialise
 headroom.init();
 
-
+AOS.init();
 
 
 

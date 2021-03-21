@@ -31183,6 +31183,34 @@ video {
           animation: bounce 1s infinite;
 }
 
+:root{
+  --tw-bg-opacity: 1;
+  --main-color:rgba(153, 27, 27, var(--tw-bg-opacity));
+}
+
+.bg-main-color {
+  background-color: var(--main-color);
+}
+
+.border-main-color {
+  border-color: var(--main-color);
+}
+
+.text-main-color {
+  color: var(--main-color);
+}
+
+.nav ul li {
+  border-color: transparent;
+  border-bottom-width: 1px;
+  transition-duration: 500ms
+}
+
+.nav ul li:hover {
+  font-weight: 500;
+  border-color: var(--main-color)
+}
+
 #menu-toggle:checked + #menu {
   display: block;
 }
@@ -31251,18 +31279,15 @@ video {
 }
 
 .btn-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
-  --tw-border-opacity: 1;
-  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  background-color: var(--main-color);
+  border-color: var(--main-color)
 }
 
 .btn-primary:hover {
   background-color: transparent;
-  --tw-text-opacity: 1;
-  color: rgba(37, 99, 235, var(--tw-text-opacity))
+  color: var(--main-color)
 }
 
 html,
@@ -31372,11 +31397,10 @@ body {
   line-height: 2.5rem;
   margin-bottom: 4rem;
   position: relative;
-  --tw-text-opacity: 1;
-  color: rgba(37, 99, 235, var(--tw-text-opacity));
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  width: 100%
+  width: 100%;
+  color: var(--main-color)
 }
 
 @media (min-width: 768px) {
@@ -31388,15 +31412,14 @@ body {
 
 .about::after {
   content: '';
-  --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
-  height: 0.5rem;
+  height: 0.25rem;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   bottom: -2rem;
   text-align: center;
-  width: 2.5rem
+  width: 2.5rem;
+  background-color: var(--main-color)
 }
 
 .form::after {
@@ -31431,13 +31454,12 @@ body {
 }
 
 .input:focus{
-  --tw-border-opacity: 1;
-  border-color: rgba(37, 99, 235, var(--tw-border-opacity));
   border-width: 1px;
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-color: var(--main-color)
 }
 
 .input {
@@ -31471,9 +31493,8 @@ body {
 }
 
 .a-social:hover {
-  --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
-  --tw-rotate: 45deg
+  transform: rotateY(180deg);
+  color: var(--main-color)
 }
 
 @media (min-width: 640px) {

@@ -1,18 +1,18 @@
 @extends('layouts.app')
 @section('content')
     {{--Section hero--}}
-    <section class="overflow-hidden">
+    <section class="overflow-hidden" data-aos="zoom-in" data-aos-duration="700">
         <div class="hero-section">
             <div class="absolute h-full flex justify-center items-center w-screen z-10 text-white">
                 <div class="text-center">
                     <div class="flex uppercase justify-center items-center tracking-space relative">
-                        <p class="">programming</p>
-                        <img src="img/lap.svg" alt="">
-                        <p class="">2021</p>
+                        <p class="animate__animated animate__fadeInLeft">programming</p>
+                        <img src="img/lap.svg" alt="" class="animate__animated animate__fadeInLeft animate__delay-1s">
+                        <p class="animate__animated animate__fadeInLeft animate__delay-2s">2021</p>
                     </div>
-                    <h1 class="text-5xl sm:text-8xl font-bold">It's time to Change</h1>
-                    <p class="uppercase tracking-space text-center my-12">Front End Development</p>
-                    <button class="btn btn-primary">Browse Now</button>
+                    <h1 class="text-5xl sm:text-8xl font-bold animate__animated animate__fadeInUp animate__delay-3s" >It's time to Change</h1>
+                    <p class="uppercase tracking-space text-center my-12 animate__animated animate__fadeInUp animate__delay-4s">Front End Development</p>
+                    <button class="btn btn-primary animate__animated animate__fadeInUp animate__delay-5s">Browse Now</button>
                 </div>
             </div>
             <img src="img/hero2.png" class="img-hero" alt="">
@@ -20,7 +20,7 @@
     </section>
     {{--About us--}}
     <section class="flex flex-wrap lg:flex-nowrap justify-center items-center w-full h-full mx-auto my-12 relative ">
-        <div class="w-full lg:w-2/6 mx-1 relative img-Depart">
+        <div class="w-full lg:w-2/6 mx-1 relative img-Depart" data-aos="fade-left" data-aos-duration="400">
             <div class="absolute inset-0 text-white z-20 flex justify-center items-center h-full">
                 <div class="flex flex-col">
                     <a href="#" class="text-2xl font-semibold relative a-section">OUR PROJECTS</a>
@@ -31,7 +31,7 @@
             </div>
             <img src="img/p1.png" alt="" class="w-full h-104">
         </div>
-        <div class="w-full lg:w-2/6 mx-1 relative img-Depart">
+        <div class="w-full lg:w-2/6 mx-1 relative img-Depart" data-aos="fade-left" data-aos-duration="700">
             <div class="absolute inset-0 text-white z-20 flex justify-center items-center h-full">
                 <div class="flex flex-col">
                     <a href="#" class="text-2xl font-semibold relative a-section uppercase">programming languages</a>
@@ -40,9 +40,9 @@
                     </div>
                 </div>
             </div>
-            <img src="img/p4.jpg" alt="" class="w-full h-104">
+            <img src="img/p4.jpg" alt="" class="w-full h-104" >
         </div>
-        <div class="w-full lg:w-2/6 mx-1 relative img-Depart">
+        <div class="w-full lg:w-2/6 mx-1 relative img-Depart" data-aos="fade-left" data-aos-duration="1000">
             <div class="absolute inset-0 text-white z-20 flex justify-center items-center h-full">
                 <div class="flex flex-col">
                     <a href="#" class="text-2xl font-semibold relative a-section uppercase">Frameworks</a>
@@ -56,7 +56,8 @@
     </section>
 
     {{--About us--}}
-    <section class="w-full flex flex-wrap lg:flex-nowrap justify-between mb-12 items-center bg-gray-50">
+    <section class="w-full flex flex-wrap lg:flex-nowrap justify-between mb-12 items-center bg-gray-50"
+             data-aos="fade-up" data-aos-duration="700"  data-aos-anchor-placement="center-bottom">
 
         <div class="w-full lg:w-1/2 my-12 px-10 md:px-16 text-center">
             <h1 class="about">About Me</h1>
@@ -78,7 +79,7 @@
         </div>
     </section>
 {{--Contact us--}}
-    <section class="overflow-hidden">
+    <section class="overflow-hidden" data-aos="zoom-in-up" data-aos-duration="700">
         <div class="contact-section">
             <div class="absolute h-full flex justify-center items-center w-screen z-10 text-white">
                 <div class="text-center w-full sm:w-4/5 lg:w-1/2">

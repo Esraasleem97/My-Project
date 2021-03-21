@@ -1,6 +1,7 @@
 <footer class="bg-black text-white py-8 text-center opacity-90 px-4">
-    <div class="w-3/5 flex justify-between">
-        <div class="w-1/6">
+    <div class="w-2/3 flex justify-between">
+        <div class="w-1/6 mx-6">
+
             <ul class="flex justify-between w-full">
                 <li class="a-social"><a href=""><i class="fab fa-facebook-f"></i></a></li>
                 <li class="a-social"><a href=""><i class="fab fa-instagram"></i></a></li>

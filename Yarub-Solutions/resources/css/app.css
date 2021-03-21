@@ -1,6 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root{
+    --tw-bg-opacity: 1;
+    --main-color:rgba(153, 27, 27, var(--tw-bg-opacity));
+}
+.bg-main-color {
+    background-color: var(--main-color);
+}
+.border-main-color {
+    border-color: var(--main-color);
+}
+.text-main-color {
+    color: var(--main-color);
+}
+.nav ul li {
+    @apply duration-500 border-b border-transparent
+}
+.nav ul li:hover {
+    @apply border-main-color font-medium
+}
 #menu-toggle:checked + #menu {
     display: block;
 }
@@ -27,10 +46,10 @@
     @apply outline-none
 }
 .btn-primary {
-    @apply bg-blue-600 border-blue-600 text-white
+    @apply bg-main-color border-main-color text-white
 }
 .btn-primary:hover {
-    @apply bg-transparent text-blue-600
+    @apply bg-transparent text-main-color
 }
 html,
 body {
@@ -74,7 +93,7 @@ body {
     @apply absolute inset-x-0 -bottom-4 z-20 w-20 h-px bg-white mx-auto
 }
 .about {
-    @apply flex justify-center relative text-blue-600 text-4xl mb-16 font-semibold uppercase tracking-widest w-full
+    @apply flex justify-center relative text-main-color text-4xl mb-16 font-semibold uppercase tracking-widest w-full
 }
 @screen md {
     .about {
@@ -83,7 +102,7 @@ body {
 }
 .about::after {
     content: '';
-    @apply absolute -bottom-8 mx-auto w-10 h-2 text-center bg-blue-600
+    @apply absolute -bottom-8 mx-auto w-10 h-1 text-center bg-main-color
 }
 .form::after {
     content: '';
@@ -103,7 +122,7 @@ body {
     @apply font-semibold
 }
 .input:focus{
-    @apply outline-none border border-blue-600 shadow-2xl
+    @apply outline-none border border-main-color shadow-2xl
 }
 .input {
     @apply border border-gray-400 py-2 px-4 w-full rounded-sm my-4 text-gray-800
@@ -112,5 +131,6 @@ body {
     @apply text-xl duration-500 transform
 }
 .a-social:hover {
-    @apply text-blue-500 rotate-45
+    transform: rotateY(180deg);
+    @apply text-main-color
 }

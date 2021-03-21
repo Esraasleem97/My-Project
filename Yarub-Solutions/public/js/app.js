@@ -1853,6 +1853,7 @@ var myElement = document.querySelector("header"); // construct an instance of He
 var headroom = new (headroom_js__WEBPACK_IMPORTED_MODULE_0___default())(myElement); // initialise
 
 headroom.init();
+AOS.init();
 
 /***/ }),
 
